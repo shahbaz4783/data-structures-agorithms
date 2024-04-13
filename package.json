@@ -1,16 +1,19 @@
 {
-  "name": "data-structures-agorithms",
-  "version": "1.0.0",
-  "description": "this is practice repo for questions`",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "ts-node": "^10.9.2"
-  }
+	"name": "data-structures-agorithms",
+	"version": "1.0.0",
+	"description": "this is practice repo for questions`",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"start:build": "tsc -w",
+		"start:run": "nodemon dist/app.js",
+		"start": "concurrently npm:start:*"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"concurrently": "^8.2.2",
+		"ts-node": "^10.9.2"
+	}
 }
