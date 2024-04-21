@@ -1,6 +1,7 @@
 import { BubbleSort } from './sorting_algorithm/BubbleSort.js';
 import { ReverseString } from './basic_algorithms/ReverseString.js';
 import { Count } from './basic_algorithms/Count.js';
+import { fizzBuzzArray } from './basic_algorithms/FizzBuzz.js';
 
 const sort = new BubbleSort([43, 11, -6, 2, 6, 5, 7]);
 sort.sort();
@@ -16,4 +17,7 @@ const vowels = countVowel.countVowels();
 
 const countOcc = new Count('hello there');
 const occ = countOcc.countOccurences('e');
-console.log(occ);
+// console.log(occ);
+
+const fizzy = fizzBuzzArray(46)
+console.log(fizzy);
