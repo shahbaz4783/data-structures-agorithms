@@ -3,6 +3,7 @@ import { ReverseString } from './basic_algorithms/ReverseString.js';
 import { Count } from './basic_algorithms/Count.js';
 import { FizzBuzz } from './basic_algorithms/FizzBuzz.js';
 import { ArrayIntersection } from './basic_algorithms/ArrayIntersection.js';
+import { StringyArray } from './basic_algorithms/StringyArray.js';
 //------------- Bubble Sort
 const sort = new BubbleSort([43, 11, -6, 2, 6, 5, 7]);
 sort.sort();
@@ -31,3 +32,7 @@ const intersection = intersectionArr.intersectionBySet();
 const sortArrIntersection = new BubbleSort(intersection);
 sortArrIntersection.sort();
 console.log(sortArrIntersection.collection);
+const likedByPeoples = ['adam', 'tom', 'john', 'alex', 'max'];
+const likeCount = new StringyArray(likedByPeoples);
+const countLikes = likeCount.countLikes();
+console.log(countLikes);
