@@ -1,16 +1,20 @@
 import { BubbleSort } from './sorting_algorithm/BubbleSort.js';
 import { ReverseString } from './basic_algorithms/ReverseString.js';
 import { Count } from './basic_algorithms/Count.js';
-import { fizzBuzzArray } from './basic_algorithms/FizzBuzz.js';
+import { FizzBuzz } from './basic_algorithms/FizzBuzz.js';
+import { ArrayIntersection } from './basic_algorithms/ArrayIntersection.js';
 
+//------------- Bubble Sort
 const sort = new BubbleSort([43, 11, -6, 2, 6, 5, 7]);
 sort.sort();
 // console.log(sort.collection);
 
+//------------- Reverse String
 const reverseString = new ReverseString('work now');
 reverseString.reverseByforLoop();
 // console.log(reverseString.str);
 
+//------------- Count
 const countVowel = new Count('this works');
 const vowels = countVowel.countVowels();
 // console.log(vowels);
@@ -19,5 +23,20 @@ const countOcc = new Count('hello there');
 const occ = countOcc.countOccurences('e');
 // console.log(occ);
 
-const fizzy = fizzBuzzArray(46)
-console.log(fizzy);
+//------------- FizzBuzz
+const fizzy = new FizzBuzz(16);
+const fizzBuzzArr = fizzy.method_A();
+// console.log(fizzBuzzArr);
+
+//------------- Array Intersection
+const arr1 = [2, 3, 5, 1, 4];
+const arr2 = [5, 1, 4, 2, 6];
+
+const intersectionArr = new ArrayIntersection(arr1, arr2);
+const intersection = intersectionArr.intersectionBySet();
+// console.log(intersection);
+
+const sortArrIntersection = new BubbleSort(intersection);
+sortArrIntersection.sort();
+console.log(sortArrIntersection.collection);
+

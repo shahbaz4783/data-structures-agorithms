@@ -1,17 +1,21 @@
-export const fizzBuzzArray = (value: number) => {
-	const fizzBuzz: (string | number)[] = [];
+export class FizzBuzz {
+	constructor(public length: number) {}
 
-	for (let i = 1; i <= value; i++) {
-		if (i % 15 === 0) {
-			fizzBuzz.push('FizzBuzz');
-		} else if (i % 3 === 0) {
-			fizzBuzz.push('Fizz');
-		} else if (i % 5 === 0) {
-			fizzBuzz.push('Buzz');
-		} else {
-			fizzBuzz.push(i);
+	method_A() {
+		const fizzBuzzArr: (string | number)[] = [];
+
+		for (let i = 1; i <= this.length; i++) {
+			if (i % 15 === 0) {
+				fizzBuzzArr.push('FizzBuzz');
+			} else if (i % 3 === 0) {
+				fizzBuzzArr.push('Fizz');
+			} else if (i % 5 === 0) {
+				fizzBuzzArr.push('Buzz');
+			} else {
+				fizzBuzzArr.push(i);
+			}
 		}
-	}
 
-	return fizzBuzz;
-};
+		return fizzBuzzArr;
+	}
+}
