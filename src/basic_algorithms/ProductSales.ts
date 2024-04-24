@@ -14,6 +14,6 @@ export class ProductSales {
 		);
 		const totalTax = (totalSalesAmount * tax) / 100;
 		const salesAfterTax = totalSalesAmount + totalTax;
-		return salesAfterTax;
+		return parseFloat(salesAfterTax.toFixed(2));
 	}
 }

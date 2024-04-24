@@ -50,3 +50,7 @@ const products = [
 const productSales = new ProductSales(products);
 const totalSalesPrice = productSales.getTotalSales(8);
 console.log(totalSalesPrice);
+//------------- Highest Scoring Word
+const wordsStr = new Count('nodejs is a javascript runtime');
+const highestScoringObj = wordsStr.highestScoringWord();
+console.log(highestScoringObj);
