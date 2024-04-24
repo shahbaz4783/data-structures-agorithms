@@ -4,6 +4,8 @@ import { Count } from './basic_algorithms/Count.js';
 import { FizzBuzz } from './basic_algorithms/FizzBuzz.js';
 import { ArrayIntersection } from './basic_algorithms/ArrayIntersection.js';
 import { StringyArray } from './basic_algorithms/StringyArray.js';
+import { sumOfEvenSquares } from './basic_algorithms/SumOfEvenNumbers.js';
+import { ProductSales } from './basic_algorithms/ProductSales.js';
 
 //------------- Bubble Sort
 const sort = new BubbleSort([43, 11, -6, 2, 6, 5, 7]);
@@ -43,5 +45,21 @@ console.log(sortArrIntersection.collection);
 
 const likedByPeoples = ['adam', 'tom', 'john', 'alex', 'max'];
 const likeCount = new StringyArray(likedByPeoples);
-const countLikes = likeCount.countLikes()
+const countLikes = likeCount.countLikes();
 console.log(countLikes);
+
+//------------- Sum of even square
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+const getSumOfevenNumbers = sumOfEvenSquares(numbers);
+console.log(getSumOfevenNumbers);
+
+//------------- Product Sales
+
+const products = [
+	{ name: 'demo', price: 10, quantity: 10 },
+	{ name: 'demo', price: 10, quantity: 10 },
+];
+const productSales = new ProductSales(products);
+
+const totalSalesPrice = productSales.getTotalSales(8);
+console.log(totalSalesPrice);
