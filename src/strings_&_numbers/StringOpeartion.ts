@@ -1,4 +1,4 @@
-export class Count {
+export class String {
 	constructor(public str: string) {}
 
 	countOccurences(char: string): number {
