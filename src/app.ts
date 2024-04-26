@@ -6,6 +6,8 @@ import { ArrayIntersection } from './basic_algorithms/ArrayIntersection.js';
 import { StringyArray } from './basic_algorithms/StringyArray.js';
 import { sumOfEvenSquares } from './basic_algorithms/SumOfEvenNumbers.js';
 import { ProductSales } from './basic_algorithms/ProductSales.js';
+import { countDown } from './recursion/countdown.js';
+import { Number } from './recursion/NumberOperations.js';
 
 //------------- Bubble Sort
 const sort = new BubbleSort([43, 11, -6, 2, 6, 5, 7]);
@@ -41,17 +43,17 @@ const intersection = intersectionArr.intersectionBySet();
 
 const sortArrIntersection = new BubbleSort(intersection);
 sortArrIntersection.sort();
-console.log(sortArrIntersection.collection);
+// console.log(sortArrIntersection.collection);
 
 const likedByPeoples = ['adam', 'tom', 'john', 'alex', 'max'];
 const likeCount = new StringyArray(likedByPeoples);
 const countLikes = likeCount.countLikes();
-console.log(countLikes);
+// console.log(countLikes);
 
 //------------- Sum of even square
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
 const getSumOfevenNumbers = sumOfEvenSquares(numbers);
-console.log(getSumOfevenNumbers);
+// console.log(getSumOfevenNumbers);
 
 //------------- Product Sales
 
@@ -62,9 +64,21 @@ const products = [
 const productSales = new ProductSales(products);
 
 const totalSalesPrice = productSales.getTotalSales(8);
-console.log(totalSalesPrice);
+// console.log(totalSalesPrice);
 
 //------------- Highest Scoring Word
- const wordsStr = new Count('nodejs is a javascript runtime');
- const highestScoringObj = wordsStr.highestScoringWord();
-console.log(highestScoringObj);
+const wordsStr = new Count('nodejs is a javascript runtime');
+const highestScoringObj = wordsStr.highestScoringWord();
+// console.log(highestScoringObj);
+
+// Countdown recursion
+// countDown(10);
+
+// Number Operations
+const number = new Number(7);
+
+const factorial = number.factorial();
+console.log(factorial);
+
+const sumUpTo = number.sumUpTo();
+console.log(sumUpTo);
